@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+:root {
+    --fundo-escuro: #001524;
+    --input-claro: #FDF0F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: var(--fundo-escuro);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    color: var(--input-claro);
+}
+
+.input input {
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border: 2px solid var(--input-claro);
+    background-color: transparent;
+    color: var(--input-claro);
+    outline: none;
+    font-size: 1.25rem;
+    transition: 200ms;
+    width: 100%;
+}
+
+.input input:hover, input:focus {
+    background-color: var(--input-claro);
+    color: var(--fundo-escuro);
+}
+
+.legenda {
+    margin-left: 2px;
+    font-size: 1rem;
+    color: #A7D397;
+    position: absolute;
+    text-wrap: nowrap;
+    bottom: -24px;
+    left: 4px;
+}
+
+.vermelho {
+    color: #CE5A67;
+}
