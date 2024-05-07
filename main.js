@@ -1,8 +1,9 @@
 const campoCPF = document.querySelector('.cpf');
 const legenda = document.querySelector('.legenda');
+
 campoCPF.addEventListener('keydown', (e) => {
     for(let i = 0; i < 10; i++) {
-        if(e.code === `Digit${i}`) {
+        if(e.code === `Digit${i}` || e.code === `Numpad${i}`) {
             if(campoCPF.value.length === 3) {
                 campoCPF.value += '.'
             } else if(campoCPF.value.length === 7) {
@@ -13,7 +14,7 @@ campoCPF.addEventListener('keydown', (e) => {
         }
     }
 
-    if(e.code === 'Enter') {
+    if(e.code === 'Enter' || e.code === 'NumpadEnter') {
         verificadorDosDigitos();
         cpfRepetido();
         campoVazio();

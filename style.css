@@ -9,20 +9,22 @@
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
     height: 100vh;
-    align-items: center;
     background-color: var(--fundo-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .input {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    width: 340px;
     position: relative;
 }
 
